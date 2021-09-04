@@ -98,7 +98,7 @@ async def yplay(_, message: Message):
                 type="query"
                 ysearch=query
         else:
-            d=await message.reply_text("You Didn't gave me anything to play. Send me a audio file or reply /play to an audio file.")
+            d=await message.reply_text("kya Re Madarchod Teri Maa Ka porn Play Karu Kya Bhosdike? ")
             await mp.delete(d)
             await mp.delete(message)
             return
@@ -122,7 +122,7 @@ async def yplay(_, message: Message):
         playlist.append(data)
         if len(playlist) == 1:
             m_status = await message.reply_text(
-                f"{emoji.INBOX_TRAY} Downloading and Processing..."
+                f"{emoji.INBOX_TRAY} Rukja Bhosdike Processing Chal Rahi Hai..."
             )
             await mp.download_audio(playlist[0])
             if 1 in RADIO:
@@ -158,12 +158,12 @@ async def yplay(_, message: Message):
                 tplaylist=playlist[:25]
                 pl=f"Listing first 25 songs of total {len(playlist)} songs.\n"
                 pl += f"{emoji.PLAY_BUTTON} **Playlist**:\n" + "\n".join([
-                    f"**{i}**. **🎸{x[1]}**\n   👤**Requested by:** {x[4]}"
+                    f"**{i}**. **🎸{x[1]}**\n   👤**Requested by This Gandu:** {x[4]}"
                     for i, x in enumerate(tplaylist)
                     ])
             else:
                 pl = f"{emoji.PLAY_BUTTON} **Playlist**:\n" + "\n".join([
-                    f"**{i}**. **🎸{x[1]}**\n   👤**Requested by:** {x[4]}\n"
+                    f"**{i}**. **🎸{x[1]}**\n   👤**Requested by This Gandu:** {x[4]}\n"
                     for i, x in enumerate(playlist)
                 ])
         if EDIT_TITLE:
@@ -181,11 +181,11 @@ async def yplay(_, message: Message):
 
     if type=="youtube" or type=="query":
         if type=="youtube":
-            msg = await message.reply_text("⚡️ **Fetching Song From YouTube...**")
+            msg = await message.reply_text("⚡️ **YouTube Ki Maa Chodke Song Process Kar Raha Hu**")
             url=yturl
         elif type=="query":
             try:
-                msg = await message.reply_text("⚡️ **Fetching Song From YouTube...**")
+                msg = await message.reply_text("⚡️ **Fucking Song From YouTube...**")
                 ytquery=ysearch
                 results = YoutubeSearch(ytquery, max_results=1).to_dict()
                 url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -221,7 +221,7 @@ async def yplay(_, message: Message):
         try:
             thumb = info["thumbnail"]
         except:
-            thumb="https://telegra.ph/file/181242eab5c4a74916d01.jpg"
+            thumb="https://telegra.ph/file/e4dcc70d7bea5b83b45d4.jpg"
             pass
         if int(duration) > DURATION_LIMIT:
             k=await message.reply_text(f"❌ Videos longer than {DURATION_LIMIT} minute(s) aren't allowed, the provided video is {duration} minute(s)")
@@ -275,12 +275,12 @@ async def yplay(_, message: Message):
                 tplaylist=playlist[:25]
                 pl=f"Listing first 25 songs of total {len(playlist)} songs.\n"
                 pl += f"{emoji.PLAY_BUTTON} **Playlist**:\n" + "\n".join([
-                    f"**{i}**. **🎸{x[1]}**\n   👤**Requested by:** {x[4]}"
+                    f"**{i}**. **🎸{x[1]}**\n   👤**Requested by This Gandu:** {x[4]}"
                     for i, x in enumerate(tplaylist)
                     ])
             else:
                 pl = f"{emoji.PLAY_BUTTON} **Playlist**:\n" + "\n".join([
-                    f"**{i}**. **🎸{x[1]}**\n   👤**Requested by:** {x[4]}\n"
+                    f"**{i}**. **🎸{x[1]}**\n   👤**Requested by This Gandu:** {x[4]}\n"
                     for i, x in enumerate(playlist)
                 ])
         if EDIT_TITLE:
